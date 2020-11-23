@@ -28,7 +28,8 @@ read -p "Enter number of entries you need(default=10):" n
 n=${n:-10}                                                                                                                                                                                                                                                                                                                             
 # to get random numbers with index for each random number generated:                                                                                               
 for i in `seq 0 $((n-1))`                                                                                                                                           
-do                                                                                                                                                                              echo $i, $RANDOM >> inputFile                                                                                                                                  
+do                                                                                                                                                                           
+echo $i, $RANDOM >> inputFile                                                                                                                                  
 done                                                                                                                                                                           
 ```
 8. Run above script using `./gencsv.sh`, it will ask for `entries you want to create`. Enter number of entries you want to create or it will by default create 10 entries if not provided. 	
